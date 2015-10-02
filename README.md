@@ -11,8 +11,8 @@ This guide is intended to provide explanations and examples of coding style for 
 This guide will be broken into the following sections.
 
 1. [Introduction] (https://github.com/rpcrimi/PEP0008)
-2. [Lay-Out] ()
-3. [Whitespace] ()
-4. [Comments] ()
-5. [Naming Conventions] ()
-6.  [Conclusion] ()
+2. [Lay-Out] (https://github.com/rpcrimi/PEP0008/blob/master/markdown/layout.md)
+3. [Whitespace] (https://github.com/rpcrimi/PEP0008/blob/master/markdown/whitespace.md)
+4. [Comments] (https://github.com/rpcrimi/PEP0008/blob/master/markdown/comments.md)
+5. [Naming Conventions] (https://github.com/rpcrimi/PEP0008/blob/master/markdown/namingconventions.md)
+6. [Conclusion] (https://github.com/rpcrimi/PEP0008/blob/master/markdown/conclusion.md)
