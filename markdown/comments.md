@@ -6,27 +6,27 @@ Commenting is usually the most heated topic when it comes to developers. On one 
 ## Commenting Basics
 
 - Comments should be complete sentences with the first letter capitalized (unless the first word is an identifier)
-```
-# Computes the value of a + b
-def foo(a + b)
-```
+	```
+	# Computes the value of a + b
+	def foo(a + b)
+	```
 	- Never alter identifier case:
-```
-# initDate is incremented to new value
-initDate += date
-```
+	```
+	# initDate is incremented to new value
+	initDate += date
+	```
 
 - Short comments can ommit an ending `.`, while longer (paragraph) comments should always include a `.` at the end of each sentence.
 
 	- For example:
-```
-# This comment does not need a period
-```
+	```
+	# This comment does not need a period
+	```
 	- while:
-```
-# These comments need periods as there are multiple sentences. It is 
-# important to seperate seperate sentences. I like pizza.
-```
+	```
+	# These comments need periods as there are multiple sentences. It is 
+	# important to seperate seperate sentences. I like pizza.
+	```
 
 - Always comment in English
 	- This will ensure that anyone will be able to understand your code
