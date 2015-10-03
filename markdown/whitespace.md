@@ -4,7 +4,7 @@
 2. [Operators](#Operators)
 3. [Arguments](#Arguments)
 4. [Defining Variables](#Defining Variables)
-Next [Comments] (https://github.com/rpcrimi/PEP0008/blob/master/markdown/comments.md)
+5. Next [Comments] (https://github.com/rpcrimi/PEP0008/blob/master/markdown/comments.md)
 
 <a id="Introduction"></a>
 ## Introduction

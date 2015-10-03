@@ -5,7 +5,7 @@
 3. [Block Comments](#Block Comments)
 4. [Inline Comments](#Inline Comments)
 5. [Important Note](#Important Note)
-Next [Naming Conventions] (https://github.com/rpcrimi/PEP0008/blob/master/markdown/namingconventions.md)
+6. Next [Naming Conventions] (https://github.com/rpcrimi/PEP0008/blob/master/markdown/namingconventions.md)
 
 <a id="Introduction"></a>
 ## Introduction

@@ -5,7 +5,7 @@
 3. [Indentation](#Indentation)
 4. [Blank Lines](#Blank Lines)
 5. [Line Length](#Line Length)
-Next [White Space](https://github.com/rpcrimi/PEP0008/blob/master/markdown/whitespace.md)
+6. Next [White Space](https://github.com/rpcrimi/PEP0008/blob/master/markdown/whitespace.md)
 
 <a id="Introduction"></a>
 ## Introduction
