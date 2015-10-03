@@ -1,5 +1,15 @@
 # Whitespace
 
+1. [Introduction](#Introduction)
+2. [Operators](#Operators)
+3. [Arguments](#Arguments)
+4. [Defining Variables](#Defining Variables)
+Next [Comments] (https://github.com/rpcrimi/PEP0008/blob/master/markdown/comments.md)
+
+<a id="Introduction"></a>
+## Introduction
+
+<a id="Operators"></a>
 ## Operators
 Always surround operators with a space on either side. For example, `==`, `<`, `!=`, `in`, `is`, `+=`, `=`, etc. should always be seperated on either side with a blank space.
 
@@ -32,6 +42,7 @@ A small fix makes this statement more legible:
 a = (a+b) * (z-y) / b
 ```
 
+<a id="Arguments"></a>
 ## Arguments
 When defining a default argument or keyword argument, there should be no space on either side of the `=` operator.
 
@@ -45,6 +56,7 @@ x = foo(bar, n=1)
 ```
 This more clearly states that the keyword argument `n` will have the value 1 when passed into `foo`.
 
+<a id="Defining Variables"></a>
 ## Defining Variables
 Many experienced developers encourage the use of aligned `=` operators when setting consecutive variables. 
 

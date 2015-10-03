@@ -1,10 +1,18 @@
 # Comments
 
+1. [Introduction](#Introduction)
+2. [Commenting Basics](#Commenting Basics)
+3. [Block Comments](#Block Comments)
+4. [Inline Comments](#Inline Comments)
+5. [Important Note](#Important Note)
+Next [Naming Conventions] (https://github.com/rpcrimi/PEP0008/blob/master/markdown/namingconventions.md)
+
+<a id="Introduction"></a>
 ## Introduction
 Commenting is usually the most heated topic when it comes to developers. On one extreme, some believe that comments need to be around every statement while on the other extreme some believe code should be self-describing, needing no comments. In a perfect world, the latter would be prefered. In the real word, there is some level of commenting that needs to take place. That being said, Python code does fairly well as a self-describing language. Many people find it easy to read Python code as it looks similar to psuedocode. Because of this, Python needs a lot less comments to describe code compared to languages like C and Java.
 
+<a id="Commenting Basics"></a>
 ## Commenting Basics
-
 - Comments should be complete sentences with the first letter capitalized (unless the first word is an identifier)
 	```
 	# Computes the value of a + b
@@ -33,6 +41,7 @@ Commenting is usually the most heated topic when it comes to developers. On one 
 	- Programming languages have an English influence so it will only confuse people to see other languages as comments
 	- Of course, if are positive that your code will never be seen by anyone else, you are free to write comments the language of preference.
 
+<a id="Block Comments"></a>
 ## Block Comments
 - Block comments are comments that appear before a block of code. They should be used to describe the block of code following. 
 
@@ -64,7 +73,7 @@ Commenting is usually the most heated topic when it comes to developers. On one 
 
 - Multi-Paragraphed comments should include a `#` inbetween paragraphs.
 
-
+<a id="Inline Comments"></a>
 ## Inline Comments
 - Inline comments are comments that appear in the same line as a statement. 
 	- The following is an example of an inline comment:
@@ -86,6 +95,7 @@ Commenting is usually the most heated topic when it comes to developers. On one 
 			```
 	- Use two spaces between statement and comment. This will help with the distinction between statements and comments.
 
+<a id="Important Note"></a>
 ## Important Note
 "Comments that contradict the code are worse than no comments."
 

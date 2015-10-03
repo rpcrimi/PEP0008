@@ -5,6 +5,7 @@
 3. [Indentation](#Indentation)
 4. [Blank Lines](#Blank Lines)
 5. [Line Length](#Line Length)
+Next [White Space](https://github.com/rpcrimi/PEP0008/blob/master/markdown/whitespace.md)
 
 <a id="Introduction"></a>
 ## Introduction
@@ -72,6 +73,7 @@ currentPets = []
 
 Now, a developer trying to read this code can easily tell what is going on. For example, the developer can tell that `sys`, `os`, `numpy`, and `math` are standard library modules while `nltk` is a third party module and `foo` is a local module. The comments at the top clearly state the usage of the module and the gobals at the bottom are clearly meant to be used within the module.
 
+<a id="Indentation"></a>
 ## Indentation
 
 Indentation is one of the most important aspects of Python code lay-out. Since Python uses tabs as statement delimiters, it is import to maintain structure when defining functions, seperating single lines, etc.
@@ -106,8 +108,8 @@ def add_4_nums_n_times(n, num1, num2, num3, num4):
 ```
 It is now clear to recognize where the definition ends and the functional part starts. Since the function definition adheres to the max line length (see section below) the arguments can be put on the same line. To make the function call to `get_list` more readable, we can vertically align the arguments.  
 
+<a id="Blank Lines"></a>
 ## Blank Lines
-
 Lets take a look at the following class:
 ```
 # A class that does basically nothing
@@ -170,6 +172,7 @@ class Foo():
 ``` 
 This class is much easier to understand for developers to read. For example, the spacing between functions clearly seperates their functionality. While blank lines should always be used, they should be used sparingly. For example, a developer may think it is acceptable to put multiple blank lines between statements to improve readability. However, this can actually make the code more illegible as a developer reading may think that the large seperation between code segments means that they do functionally different things. Thus, it is recommended to only use one blank line between code segments.
 
+<a id="Line Length"></a>
 ## Line Length
 There are times when a single line of code can stretch far beyond the width of the screen. In these cases, it is important to break up the line into multiple structured lines. This will improve the readability of the code for other developers. It is recommended to limit lines to 79 characters which is the standard width of most IDE's. This will help when transferring code between machines a screens as a developer will always be able to read a full line of code on their screen.
 
