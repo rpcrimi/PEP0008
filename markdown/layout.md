@@ -56,10 +56,10 @@ Lets fix the messy code to adhere to these guidelines:
 
 import sys
 import os
-
 import numpy
-from nltk import brown
 from math import pi,sin
+
+from nltk import brown
 
 from foo import bar
 
@@ -69,3 +69,5 @@ isPet = True
 canFly = False
 currentPets = []
 ```
+
+Now, a developer trying to read this code can easily tell what is going on. For example, the developer can tell that `sys`, `os`, `numpy`, and `math` are standard library modules while `nltk` is a third party module and `foo` is a local module. The comments at the top clearly state the usage of the module and the gobals at the bottom are clearly meant to be used within the module.
