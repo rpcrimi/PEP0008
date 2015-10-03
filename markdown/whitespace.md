@@ -45,7 +45,7 @@ x = foo(bar, n=1)
 ```
 This more clearly states that the keyword argument `n` will have the value 1 when passed into `foo`.
 
-# Defining Variables
+## Defining Variables
 Many experienced developers encourage the use of aligned `=` operators when setting consecutive variables. 
 
 For example:
@@ -67,8 +67,8 @@ very_long_name = 3
 ```
 This makes reading the setting of variables much more legible as the values of short variables names are not far away from the name of the variable.
 
-
-
+## Up Next
+[Comments] (https://github.com/rpcrimi/PEP0008/blob/master/markdown/comments.md)
 
 
 
