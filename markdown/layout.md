@@ -6,12 +6,12 @@
 4. [Blank Lines](#Blank Lines)
 5. [Line Length](#Line Length)
 
-
+<a id="Introduction"></a>
 ## Introduction
 The lay-out of code describes the physical appearance of lines, code blocks, comments, etc. This includes the spacing and delimeters between these sections. Having a standardized code lay-out will help other developers understand one's code. It will also help in the case of checking in code. Removing unnecessary whitespace and blank lines will lower the amount of "diff noise" when comparing checked in code to previous versions. We will focus on 5 main types of code lay-out in this section
 
+<a id="Imports"></a>
 ## Imports
-
 Lets look at the following "header" of a python script:
 
 ```
