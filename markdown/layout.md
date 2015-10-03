@@ -108,4 +108,71 @@ It is now clear to recognize where the definition ends and the functional part s
 
 ## Blank Lines
 
+Lets take a look at the following class:
+```
+# A class that does basically nothing
+class Foo():
+	def init(x, y):
+		self.x = x
+		self.y = y
+	# A method that messes with arguments a and b for a while
+	def bar(a, b):	
+		total = 0
+		while(total < 100):
+			total += a*b
+		return total
+	# A method that returns a^2
+	def square(a):
+		return a*a
+	# A method that raises a to the power b
+	def pow(a, b):
+		total = 1
+		for i in range(b):
+			total *= a
+		return total
+```
+It is pretty obvious how poorly written this class is written. There is no spacing between functions or comments. Also, the code inside each function has no spacing between code segments, making reading the algorithms very difficult. When considering spacing it is important to put a blank line between consecutive functions and classes. It is also important to leave blank lines inbetween different sections of an algorithm.
 
+Lets fix the class above to follow these rules:
+```
+# A class that does basically nothing
+class Foo():
+
+	def init(x, y):
+		self.x = x
+		self.y = y
+
+	# A method that messes with arguments a and b for a while
+	def bar(a, b):
+		# Initiate total to 0	
+		total = 0
+
+		# Loop until total is greater than 100
+		while(total < 100):
+			total += a*b
+
+		return total
+
+	# A method that returns a^2
+	def square(a):
+		return a*a
+
+	# A method that raises a to the power b
+	def pow(a, b):
+		# Initiate total to 1
+		total = 1
+
+		# Multiply by a, b times
+		for i in range(b):
+			total *= a
+
+		return total
+``` 
+This class is much easier to understand for developers to read. For example, the spacing between functions clearly seperates their functionality. While blank lines should always be used, they should be used sparingly. For example, a developer may think it is acceptable to put multiple blank lines between statements to improve readability. However, this can actually make the code more illegible as a developer reading may think that the large seperation between code segments means that they do functionally different things. Thus, it is recommended to only use one blank line between code segments.
+
+## Line Length
+There are times when a single line of code can stretch far beyond the width of the screen. In these cases, it is important to break up the line into multiple structured lines. This will improve the readability of the code for other developers. It is recommended to limit lines to 79 characters which is the standard width of most IDE's. This will help when transferring code between machines a screens as a developer will always be able to read a full line of code on their screen.
+
+
+## Up Next
+[Whitespace] (https://github.com/rpcrimi/PEP0008/blob/master/markdown/whitespace.md)
