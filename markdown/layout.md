@@ -2,10 +2,10 @@
 
 1. Introduction
 2. Imports
-3. Tabs and Spaces
-4. Indentation
-5. Blank Lines
-6. Line Length 
+3. Indentation
+4. Blank Lines
+5. Line Length
+
 
 ## Introduction
 The lay-out of code describes the physical appearance of lines, code blocks, comments, etc. This includes the spacing and delimeters between these sections. Having a standardized code lay-out will help other developers understand one's code. It will also help in the case of checking in code. Removing unnecessary whitespace and blank lines will lower the amount of "diff noise" when comparing checked in code to previous versions. We will focus on 5 main types of code lay-out in this section
@@ -71,3 +71,41 @@ currentPets = []
 ```
 
 Now, a developer trying to read this code can easily tell what is going on. For example, the developer can tell that `sys`, `os`, `numpy`, and `math` are standard library modules while `nltk` is a third party module and `foo` is a local module. The comments at the top clearly state the usage of the module and the gobals at the bottom are clearly meant to be used within the module.
+
+## Indentation
+
+Indentation is one of the most important aspects of Python code lay-out. Since Python uses tabs as statement delimiters, it is import to maintain structure when defining functions, seperating single lines, etc.
+
+Lets take the following function as an example:
+```
+def add_4_nums_n_times(n, 
+	num1, num2, num3, num4):
+	l = get_list(num1, num2,
+	  num3, num4)
+	sum = 0
+	for i in range(n):
+		for el in l:
+			sum += el
+	return sum
+```
+
+This function is very difficult to read. For example, it is very difficult to tell the difference between the function definition and the code within the function. The most important rule when dealing with indentation in Python is to align continuation lines vertically. This will help clearly distinguish code blocks from one another. 
+
+Lets try to fix the function above with this rule:
+```
+def add_4_nums_n_times(n, num1, num2, num3, num4):
+	l = get_list(
+		num1, num2,
+	  	num3, num4
+	  	)
+	sum = 0
+	for i in range(n):
+		for el in l:
+			sum += el
+	return sum
+```
+It is now clear to recognize where the definition ends and the functional part starts. Since the function definition adheres to the max line length (see section below) the arguments can be put on the same line. To make the function call to `get_list` more readable, we can vertically align the arguments.  
+
+## Blank Lines
+
+
