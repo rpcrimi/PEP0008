@@ -1,10 +1,10 @@
 # Lay-Out
 
-1. Introduction
-2. Imports
-3. Indentation
-4. Blank Lines
-5. Line Length
+1. [Introduction](#Introduction)
+2. [Imports](#Imports)
+3. [Indentation](#Indentation)
+4. [Blank Lines](#Blank Lines)
+5. [Line Length](#Line Length)
 
 
 ## Introduction

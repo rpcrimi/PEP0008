@@ -91,6 +91,9 @@ Commenting is usually the most heated topic when it comes to developers. On one 
 
 This should be a quote every developer should live by. If comments are out of date or do not correctly describe the functionality of code, they will only lessen another developers understanding of your code. While difficult to remember, it is essential to update comments every time a section of code is updated.
 
+## Up Next
+[Naming Conventions] (https://github.com/rpcrimi/PEP0008/blob/master/markdown/namingconventions.md)
+
 
 
 
