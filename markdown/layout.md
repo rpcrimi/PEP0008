@@ -14,14 +14,15 @@ The lay-out of code describes the physical appearance of lines, code blocks, com
 
 Lets look at the following "header" of a python script:
 
-	`from foo import bar
-	 from math import pi
-	 from math import sin
+`__all__ = ['Cat', 'Dog', 'Fish']
+ from foo import bar
+ from math import pi
+ from math import sin
 
-	 import numpy
-	 from nltk import *
+ import numpy
+ from nltk import *
 
-	 # Class Pet
-	 # This class does absolutely nothing
-	 # ...and the header is hard to read
-	 `
+ # Class Pet
+ # This class does absolutely nothing
+ # ...and the header is hard to read
+`
