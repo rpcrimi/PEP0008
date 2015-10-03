@@ -10,7 +10,7 @@ Commenting is usually the most heated topic when it comes to developers. On one 
 # Computes the value of a + b
 def foo(a + b)
 ```
-Never alter identifier case:
+	- Never alter identifier case:
 ```
 # initDate is incremented to new value
 initDate += date
@@ -18,11 +18,11 @@ initDate += date
 
 - Short comments can ommit an ending `.`, while longer (paragraph) comments should always include a `.` at the end of each sentence.
 
-For example:
+	- For example:
 ```
 # This comment does not need a period
 ```
-while:
+	- while:
 ```
 # These comments need periods as there are multiple sentences. It is 
 # important to seperate seperate sentences. I like pizza.
