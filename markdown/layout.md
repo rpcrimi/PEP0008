@@ -27,8 +27,7 @@ Lets look at the following "header" of a python script:
 	 currentPets = []
 	 # Class Pet
 	 # This class does absolutely nothing
-	 # ...and the header is hard to read
-	 `
+	 # ...and the header is hard to read`
 
 As you can probably tell, this would very difficult to parse for another developer reading. For example, the developer cannot tell the difference between standard library imports and local imports. Another problem is the unstructured importing of common libraries. For example, the classes pi and sin are imported two seperate ways on two different lines. Since these classes come from the same library, it would be better to have them grouped together.
 
@@ -48,7 +47,8 @@ Here are a few basic lay-out guidelines when it comes to imports:
 	- This makes it clear that the comments are descibing the usage of the module and that the globals and constants belong to the modules scope.
 
 Lets fix the messy code to adhere to these guidelines:
-	`# Class Pet
+	`
+	 # Class Pet
 	 # This class does absolutely nothing
 	 # ...but the header is easy to read
 
