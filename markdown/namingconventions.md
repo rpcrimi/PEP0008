@@ -10,7 +10,8 @@ Here are a few descriptive naming conventions and their typical use:
 - Single lowercase letter
 	- ex. `i`, `x`, `y`
 	- Used for:
-		- Iterators and variables that correspond to the letter (ex `(x, y)` point)
+		- Iterators (ex. `for i in range(10)`)
+		- Variables that correspond to the letter (ex `(x, y)` point)
 - Lowercase word
 	- ex. `start`, `time`, `length`
 	- Used for: 
