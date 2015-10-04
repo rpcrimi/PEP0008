@@ -2,12 +2,12 @@
 
 1. [Introduction](#Introduction)
 2. [Prescriptive](#Prescriptive)
-3. [Descriptive](#Descriptive)
+3. [Structural Conventions](#Structural Conventions)
 4. [Other Notes](#Other Notes)
 
 <a id="Introduction"></a>
 ## Introduction
-Naming conventions is another critical part of a development teams coding style. Naming conventions will help readers distinguish between different data structures and layers of code. For example, functions should have a different naming convention than variables so that a reader can clearly tell the difference when reading the code. There are two styles of naming conventions we will discuss here: Descriptive and Prescriptive.
+Naming conventions is another critical part of a development teams coding style. Naming conventions will help readers distinguish between different data structures and layers of code. For example, functions should have a different naming convention than variables so that a reader can clearly tell the difference when reading the code. There are two styles of naming conventions we will discuss here: Prescriptive and Structural.
 
 <a id="Prescriptive"></a>
 ## Prescriptive
@@ -32,13 +32,13 @@ Class StringHandler():
 	def str_format(self, s, type):
 		return format(s, type)
 ```
-If a developer would like to use this module, he will soon find out that all methods that work with a string have the leading `str_`. Now the developer can basically guess the name of functions.
+If a developer would like to use this module, he will soon find out that all methods that work with a string have the leading `str_`. Now the developer can guess the name of functions.
 
 While prescriptive naming conventions are usually left up to the team, it is essential to stick to the determined conventions. For example, the team may decide to stay away from all single letter names (`i`, `x`, `y`). While this may be difficult for developers used to using these names, it is important to stick to the teams convetions.
 
-<a id="Descriptive"></a>
-## Descriptive
-Descriptive naming conventions are the way in which developers structure a name. This includes character case, name length, underscores, etc.
+<a id="Structural Conventions"></a>
+## Structural Conventions
+These conventions are the way in which developers structure a data structure's name. This includes character case, name length, underscores, etc.
 
 Here are a few descriptive naming conventions and their typical use:
 - Single lowercase letter
@@ -61,7 +61,7 @@ Here are a few descriptive naming conventions and their typical use:
 		- Longer module names
 		- Longer package names
 	- Use leading underscore for non-public methods and instance variables
-		- ex. `Cat._increase_size()`, `Dog._private_var`
+		- ex. `Cat._private_method()`, `Dog._private_var`
 - Uppercase word
 	- ex. `MAX_BUFFER_SIZE`, `TOTAL`
 	- Used for:
