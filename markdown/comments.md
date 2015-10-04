@@ -5,7 +5,6 @@
 3. [Block Comments](#Block Comments)
 4. [Inline Comments](#Inline Comments)
 5. [Important Note](#Important Note)
-6. Next [Naming Conventions] (https://github.com/rpcrimi/PEP0008/blob/master/markdown/namingconventions.md)
 
 <a id="Introduction"></a>
 ## Introduction
@@ -15,8 +14,8 @@ Commenting is usually the most heated topic when it comes to developers. On one 
 ## Commenting Basics
 - Comments should be complete sentences with the first letter capitalized (unless the first word is an identifier)
 	```
-	# Computes the value of a + b
-	def foo(a + b)
+	# Compute the value of a + b
+	x = foo(a, b)
 	```
 	- Never alter identifier case:
 	```
@@ -26,11 +25,11 @@ Commenting is usually the most heated topic when it comes to developers. On one 
 
 - Short comments can ommit an ending `.`, while longer (paragraph) comments should always include a `.` at the end of each sentence.
 
-	- For example:
+	- Does not need period:
 	```
 	# This comment does not need a period
 	```
-	- while:
+	- Needs period:
 	```
 	# These comments need periods as there are multiple sentences. It is 
 	# important to seperate seperate sentences. I like pizza.
@@ -71,7 +70,7 @@ Commenting is usually the most heated topic when it comes to developers. On one 
 		return c * c
 	```
 
-- Multi-Paragraphed comments should include a `#` inbetween paragraphs.
+- Multi-Paragraphed comments should include a `#` in-between paragraphs.
 
 <a id="Inline Comments"></a>
 ## Inline Comments
@@ -95,11 +94,13 @@ Commenting is usually the most heated topic when it comes to developers. On one 
 			```
 	- Use two spaces between statement and comment. This will help with the distinction between statements and comments.
 
+	- Avoid inline comments at the end of statements longer than the max line length (79). Instead include a block comment above the statement.
+
 <a id="Important Note"></a>
 ## Important Note
 "Comments that contradict the code are worse than no comments."
 
-This should be a quote every developer should live by. If comments are out of date or do not correctly describe the functionality of code, they will only lessen another developers understanding of your code. While difficult to remember, it is essential to update comments every time a section of code is updated.
+This is a quote every developer should live by. If comments are out of date or do not correctly describe the functionality of code, they will only lessen another developers understanding of your code. While difficult to remember, it is essential to update comments every time a section of code is updated.
 
 ## Up Next
 [Naming Conventions] (https://github.com/rpcrimi/PEP0008/blob/master/markdown/namingconventions.md)

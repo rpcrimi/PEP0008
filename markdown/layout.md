@@ -5,7 +5,6 @@
 3. [Indentation](#Indentation)
 4. [Blank Lines](#Blank Lines)
 5. [Line Length](#Line Length)
-6. Next [White Space](https://github.com/rpcrimi/PEP0008/blob/master/markdown/whitespace.md)
 
 <a id="Introduction"></a>
 ## Introduction
@@ -32,7 +31,7 @@ currentPets = []
 # ...and the header is hard to read
 ```
 
-As you can probably tell, this would very difficult to parse for another developer reading. For example, the developer cannot tell the difference between standard library imports and local imports. Another problem is the unstructured importing of common libraries. For example, the classes pi and sin are imported two seperate ways on two different lines. Since these classes come from the same library, it would be better to have them grouped together.
+As you can probably tell, this would very difficult to parse for another developer reading. For example, the developer cannot tell the difference between standard library imports and local imports. Another problem is the unstructured importing of common libraries. For example, the classes `pi` and `sin` are imported two seperate ways on two different lines. Since these classes come from the same library, it would be better to have them grouped together.
 
 Here are a few basic lay-out guidelines when it comes to imports:
 
@@ -42,7 +41,7 @@ Here are a few basic lay-out guidelines when it comes to imports:
 	- Instead of `import math.sin ` use `from math import sin `
 - Stay away from wildcard imports
 	- These types of imports make it unclear what names are in the namespace. Also, for larger packages, this may slow down performance as lots of code must be read into memory.
-- Ordering of imports should be in the following order which a blank line inbetween
+- Ordering of imports should be in the following order with a blank line in-between
 	- Standard Library
 	- Third Party
 	- Local/Library Specific
@@ -64,14 +63,14 @@ from nltk import brown
 
 from foo import bar
 
-__all__ = ['Cat', 'Dog', 'Fish']
+__all__ = ['Cat', 'Dog', 'Fish', 'Bird']
 
 isPet = True
 canFly = False
 currentPets = []
 ```
 
-Now, a developer trying to read this code can easily tell what is going on. For example, the developer can tell that `sys`, `os`, `numpy`, and `math` are standard library modules while `nltk` is a third party module and `foo` is a local module. The comments at the top clearly state the usage of the module and the gobals at the bottom are clearly meant to be used within the module.
+Now, a developer trying to read this code can easily tell what is going on. For example, the developer can tell that `sys`, `os`, `numpy`, and `math` are standard library modules while `nltk` is a third party module and `foo` is a local module. The comments at the top clearly state the usage of the module and the globals at the bottom are clearly meant to be used within the module.
 
 <a id="Indentation"></a>
 ## Indentation
@@ -133,7 +132,7 @@ class Foo():
 			total *= a
 		return total
 ```
-It is pretty obvious how poorly written this class is written. There is no spacing between functions or comments. Also, the code inside each function has no spacing between code segments, making reading the algorithms very difficult. When considering spacing it is important to put a blank line between consecutive functions and classes. It is also important to leave blank lines inbetween different sections of an algorithm.
+It is pretty obvious how poorly this class is written. There is no spacing between functions or comments. Also, the code inside each function has no spacing between code segments, making reading the algorithms very difficult. When considering spacing it is important to put a blank line between consecutive functions and classes. It is also important to leave blank lines in-between different sections of an algorithm.
 
 Lets fix the class above to follow these rules:
 ```
@@ -145,11 +144,9 @@ class Foo():
 		self.y = y
 
 	# A method that messes with arguments a and b for a while
-	def bar(a, b):
-		# Initiate total to 0	
+	def bar(a, b):	
 		total = 0
 
-		# Loop until total is greater than 100
 		while(total < 100):
 			total += a*b
 
@@ -161,10 +158,8 @@ class Foo():
 
 	# A method that raises a to the power b
 	def pow(a, b):
-		# Initiate total to 1
 		total = 1
 
-		# Multiply by a, b times
 		for i in range(b):
 			total *= a
 
