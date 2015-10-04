@@ -1,8 +1,15 @@
 # Naming Conventions
 
+1. (Introduction)(#Introduction)
+2. (Prescriptive)(#Prescriptive)
+3. (Descriptive)(#Descriptive)
+4. (Other Notes)(#Other Notes)
+
+<a id="Introduction"></a>
 ## Introduction
 Naming conventions is another critical part of a development teams coding style. Naming conventions will help readers distinguish between different data structures and layers of code. For example, functions should have a different naming convention than variables so that a reader can clearly tell the difference when reading the code. There are two styles of naming conventions we will discuss here: Descriptive and Prescriptive.
 
+<a id="Prescriptive"></a>
 ## Prescriptive
 Prescriptive naming conventions are ones that describe how a data structure should be named. You can think of prescriptive naming conventions as "names to avoid". For example, most style guides tend to steer developers away from using `I` (uppercase eye), `O` (uppercase oh), and `l` (lowercase el) as names to data structures as they look very similar to `0` (zero) and `1` (one). 
 
@@ -29,7 +36,7 @@ If a developer would like to use this module, he will soon find out that all met
 
 While prescriptive naming conventions are usually left up to the team, it is essential to stick to the determined conventions. For example, the team may decide to stay away from all single letter names (`i`, `x`, `y`). While this may be difficult for developers used to using these names, it is important to stick to the teams convetions.
 
-
+<a id="Descriptive"></a>
 ## Descriptive
 Descriptive naming conventions are the way in which developers structure a name. This includes character case, name length, underscores, etc.
 
@@ -72,8 +79,8 @@ Here are a few descriptive naming conventions and their typical use:
 		- Longer variable names
 		- Longer function names
 
+<a id="Other Notes"></a>
 ## Other Notes
-
 - Public attributes should never include a leading underscore as this is the convention for non-public attributes. If a public attribute interferes with a reserved word, use a trailing underscore. For example, `min_size` should be changed to `min_size_`.
 
 - Always use `self` as the first argument to an instance method.
