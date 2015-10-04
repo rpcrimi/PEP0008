@@ -1,9 +1,9 @@
 # Naming Conventions
 
-1. (Introduction)(#Introduction)
-2. (Prescriptive)(#Prescriptive)
-3. (Descriptive)(#Descriptive)
-4. (Other Notes)(#Other Notes)
+1. [Introduction](#Introduction)
+2. [Prescriptive](#Prescriptive)
+3. [Descriptive](#Descriptive)
+4. [Other Notes](#Other Notes)
 
 <a id="Introduction"></a>
 ## Introduction
