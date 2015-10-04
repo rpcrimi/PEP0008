@@ -38,9 +38,9 @@ While prescriptive naming conventions are usually left up to the team, it is ess
 
 <a id="Structural Conventions"></a>
 ## Structural Conventions
-These conventions are the way in which developers structure a data structure's name. This includes character case, name length, underscores, etc.
+These conventions are the way in which developers structure a data structure's name. These include character case, name length, underscores, etc.
 
-Here are a few descriptive naming conventions and their typical use:
+Here are a few structural naming conventions and their typical use:
 - Single lowercase letter
 	- ex. `i`, `x`, `y`
 	- Used for:

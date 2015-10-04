@@ -8,7 +8,7 @@
 
 <a id="Introduction"></a>
 ## Introduction
-Commenting is usually the most heated topic when it comes to developers. On one extreme, some believe that comments need to be around every statement while on the other extreme some believe code should be self-describing, needing no comments. In a perfect world, the latter would be prefered. In the real word, there is some level of commenting that needs to take place. That being said, Python code does fairly well as a self-describing language. Many people find it easy to read Python code as it looks similar to psuedocode. Because of this, Python needs a lot less comments to describe code compared to languages like C and Java.
+Commenting is often the most heated topic among developers. On one extreme, some believe that comments need to be around every statement. On the other extreme, others believe code should be self-describing, needing no comments. In a perfect world, the latter is preferred. In the real word, some level of commenting is always required. That being said, Python code does relatively well as a self-describing language. Many people find it easy to read Python code as it looks similar to psuedocode. Because of this, Python code usually requires less commenting compared to more cryptic languages such as C and Java.
 
 <a id="Commenting Basics"></a>
 ## Commenting Basics
@@ -23,7 +23,7 @@ Commenting is usually the most heated topic when it comes to developers. On one 
 	initDate += date
 	```
 
-- Short comments can ommit an ending `.`, while longer (paragraph) comments should always include a `.` at the end of each sentence.
+- Short comments can omit an ending period (`.`), while longer (paragraph) comments should always include one at the end of each sentence.
 
 	- Does not need period:
 	```
@@ -32,17 +32,17 @@ Commenting is usually the most heated topic when it comes to developers. On one 
 	- Needs period:
 	```
 	# These comments need periods as there are multiple sentences. It is 
-	# important to seperate seperate sentences. I like pizza.
+	# important to separate seperate sentences. I like pizza.
 	```
 
 - Always comment in English
-	- This will ensure that anyone will be able to understand your code
-	- Programming languages have an English influence so it will only confuse people to see other languages as comments
-	- Of course, if are positive that your code will never be seen by anyone else, you are free to write comments the language of preference.
+	- This will ensure that any developer in the world will be able to understand your code, as English is the common language used by developers worldwide
+	- Programming languages themselves are English based, so it only confuses people to see other languages as comments
+	- If you are 100% certain your code will never be seen by anyone else, you are free to write comments in the language of your preference. However, remember that this is rarely the case.
 
 <a id="Block Comments"></a>
 ## Block Comments
-- Block comments are comments that appear before a block of code. They should be used to describe the block of code following. 
+- Block comments are comments that appear before a block of code to describe its functionality. 
 
 	- The following is an example of a block comment:
 	```
@@ -55,14 +55,14 @@ Commenting is usually the most heated topic when it comes to developers. On one 
 	```
 
 - Block comments should be indented at the same level of the code it describes.
-	- The following is an example of a "Bad" block comment:
+	- Here is an example of a poorly indented block comment. It is not clear what part of the code the comment refers to:
 	```
 	def foo(a, b):
 	# Add a and b and return square of answer
 		c = a + b
 		return c * c
 	```
-	- This should be changed to the following:
+	- This version clearly shows that the comment referes to the code that follows it:
 	```
 	def foo(a, b):
 		# Add a and b and return square of answer
@@ -74,27 +74,26 @@ Commenting is usually the most heated topic when it comes to developers. On one 
 
 <a id="Inline Comments"></a>
 ## Inline Comments
-- Inline comments are comments that appear in the same line as a statement. 
-	- The following is an example of an inline comment:
-	```
-	numPets = read(file)["numPets"]   # Initiate num pets to value from file
-	```
-- Inline comments are key for describing confusing code statements. While block comments can usually describe the behavior of a block of code fairly well, there are some individual statements that are too confusing and need to be commented. 
+While block comments can usually describe the behavior of a block of code fairly well, there are occasionally situations in which a statement needs to be clarified individually with an inline comment. Inline comments are comments that appear in the same line as a statement. 
 
-- When using inline comments, try to follow the following guidelines:
-	- Use inline comments sparingly
-		- Not every statement needs an inline comment.
-			- The following does not need the inline comment:
-			```
-			i = i + 1  # Increment x
-			```
-			- The following statement should include the inline comment:
-			```
-			i = i + 1  # Compensate for border
-			```
-	- Use two spaces between statement and comment. This will help with the distinction between statements and comments.
+For example:
+```
+numPets = read(file)["numPets"]   # Initiate num pets to value from file
+```
 
-	- Avoid inline comments at the end of statements longer than the max line length (79). Instead include a block comment above the statement.
+### Inline Comment Guidelines
+- Use inline comments sparingly.
+	- Not every statement needs an inline comment. For example, the comment used in this case is obvious and adds no value:
+	```
+	i = i + 1  # Increment x
+	```
+	- However, the comment below helps the reader better understand the same code's functionality in the context of the application, so it is useful and should be included:
+	```
+	i = i + 1  # Compensate for border
+	```
+- Use two spaces between statement and comment. This will help with the distinction between statements and comments.
+
+- Avoid inline comments at the end of statements longer than the max line length (79). Instead include a block comment above the statement.
 
 <a id="Important Note"></a>
 ## Important Note

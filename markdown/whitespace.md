@@ -10,28 +10,28 @@
 
 <a id="Operators"></a>
 ## Operators
-Always surround operators with a space on either side. For example, `==`, `<`, `!=`, `in`, `is`, `+=`, `=`, etc. should always be seperated on either side with a blank space.
+Always surround operators with a space on either side. For example, `==`, `<`, `!=`, `in`, `is`, `+=`, `=`, etc. should always be separated on either side with a blank space.
 
-Bad:
+For example, this code is functional, but hard to read:
 ```
 if(foo==bar):
 	if(1<3 and 1>0):
 		print foo
 ```
 
-Good:
+This is much better:
 ```
 if(foo == bar):
 	if(1 < 3 and 1 > 0):
 		print foo
 ```
 
-The "Good" example is much more legible than the "Bad" example. Developers will be able to clearly read both `if` statements as the arguments are seperated by whitespace.
+The conditions of the `if` statement are now easier to read.
 
 ## Priority
-If there are multiple nested operators in a statement, it is important to use whitespace where priority is higher.
+If there are multiple nested operators in a statement, use whitespace where priority is higher.
 
-Lets look at the following example:
+For example:
 ```
 a = (a + b) * (z - y) / b
 ```
@@ -53,7 +53,7 @@ should be changed to:
 ```
 x = foo(bar, n=1)
 ```
-This more clearly states that the keyword argument `n` will have the value 1 when passed into `foo`.
+This more clearly shows that the keyword argument `n` will have the value 1 when passed into `foo`.
 
 <a id="Defining Variables"></a>
 ## Defining Variables
@@ -67,7 +67,7 @@ very_long_name = 3
 long_name      = True
 ```
 
-However, when there lots of variables being defined, this can be very difficult to read. Instead, try to order variable names by length, and include only one space on either side of the `=` operator. 
+However, when many variables are being defined, this technique can make some of them difficult to distinguish. Instead, order variable names by length, and include only one space on either side of the `=` operator. 
 
 For example, lets fix the above definitions:
 ```
@@ -76,12 +76,7 @@ y = 2
 long_name = True
 very_long_name = 3
 ```
-This makes reading the setting of variables much more legible as the values of short variables names are not far away from the name of the variable.
+The setting of variables are now much more legible as the values all of the variables are close to their names.
 
 ## Up Next
 [Comments] (https://github.com/rpcrimi/PEP0008/blob/master/markdown/comments.md)
-
-
-
-
-

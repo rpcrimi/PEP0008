@@ -8,7 +8,7 @@
 
 <a id="Introduction"></a>
 ## Introduction
-The lay-out of code describes the physical appearance of lines, code blocks, comments, etc. This includes the spacing and delimeters between these sections. Having a standardized code lay-out will help other developers understand one's code. It will also help in the case of checking in code. Removing unnecessary whitespace and blank lines will lower the amount of "diff noise" when comparing checked in code to previous versions. We will focus on 5 main types of code lay-out in this section
+The lay-out of code describes the physical appearance of lines, code blocks, comments, and spacing and delimeters between sections of code. Having a standardized code lay-out will help other developers understand one's code. It will also help in the case of checking in code. Removing unnecessary whitespace and blank lines will lower the amount of "diff noise" when comparing checked in code to previous versions. We will focus on 5 main types of code lay-out in this section
 
 <a id="Imports"></a>
 ## Imports
@@ -31,22 +31,22 @@ currentPets = []
 # ...and the header is hard to read
 ```
 
-As you can probably tell, this would very difficult to parse for another developer reading. For example, the developer cannot tell the difference between standard library imports and local imports. Another problem is the unstructured importing of common libraries. For example, the classes `pi` and `sin` are imported two seperate ways on two different lines. Since these classes come from the same library, it would be better to have them grouped together.
+The style used may be very difficult to parse for another developer. It shows no clear difference between standard library imports and local imports. It also has unstructured importing of common libraries. For example, the classes `pi` and `sin` are imported two seperate ways on two different lines. Since these classes come from the same library, it would be better to have them grouped together.
 
-Here are a few basic lay-out guidelines when it comes to imports:
+Here are several basic lay-out guidelines for imports:
 
-- Imports should be on seperate lines unless the imports come from the same package
-	- This clarifies which packages contain which classes and seperates conflicting names
-- Absolute imports are preferred
-	- Instead of `import math.sin ` use `from math import sin `
-- Stay away from wildcard imports
-	- These types of imports make it unclear what names are in the namespace. Also, for larger packages, this may slow down performance as lots of code must be read into memory.
-- Ordering of imports should be in the following order with a blank line in-between
+- Imports should be on separate lines unless the imports come from the same package
+	- This clarifies which classes each package contains and also separates conflicting names
+- Absolute imports are preferred.
+	- For example, instead of `import math.sin ` use `from math import sin `
+- Stay away from wildcard imports.
+	- These types of imports make it unclear as to the classes in the namespace. Also, for larger packages, this may slow down performance as more code than necessary must be read into memory.
+- Ordering of imports should be in the following order, separated by a blank line
 	- Standard Library
 	- Third Party
 	- Local/Library Specific
-- Imports should be after any module comments and before any globals or constants.
-	- This makes it clear that the comments are descibing the usage of the module and that the globals and constants belong to the modules scope.
+- Imports should occur after any module comments and before any globals or constants.
+	- This makes it clear that the comments are describing the usage of the module and that the globals and constants belong to the modules scope.
 
 Lets fix the messy code to adhere to these guidelines:
 ```
@@ -75,7 +75,7 @@ Now, a developer trying to read this code can easily tell what is going on. For 
 <a id="Indentation"></a>
 ## Indentation
 
-Indentation is one of the most important aspects of Python code lay-out. Since Python uses tabs as statement delimiters, it is import to maintain structure when defining functions, seperating single lines, etc.
+Indentation is one of the most important aspects of Python code lay-out. Since Python uses tabs as statement delimiters, it is import to maintain structure when defining functions and separating lines.
 
 Lets take the following function as an example:
 ```
@@ -90,9 +90,9 @@ def add_4_nums_n_times(n,
 	return sum
 ```
 
-This function is very difficult to read. For example, it is very difficult to tell the difference between the function definition and the code within the function. The most important rule when dealing with indentation in Python is to align continuation lines vertically. This will help clearly distinguish code blocks from one another. 
+This function is very difficult to read. It is very difficult to tell the difference between the function definition from the code within the function. Aligning continuation lines vertically solves this problem, clearly distinguishing code blocks from one another. 
 
-Lets try to fix the function above with this rule:
+Lets fix the function above with this rule:
 ```
 def add_4_nums_n_times(n, num1, num2, num3, num4):
 	l = get_list(
@@ -105,7 +105,7 @@ def add_4_nums_n_times(n, num1, num2, num3, num4):
 			sum += el
 	return sum
 ```
-It is now clear to recognize where the definition ends and the functional part starts. Since the function definition adheres to the max line length (see section below) the arguments can be put on the same line. To make the function call to `get_list` more readable, we can vertically align the arguments.  
+It is now clear to recognize where the definition ends and the functional part starts. Since the function definition adheres to the max line length (see section below) the arguments can be put on the same line. To make the function call to `get_list` more readable, we vertically align the arguments.  
 
 <a id="Blank Lines"></a>
 ## Blank Lines
@@ -132,7 +132,7 @@ class Foo():
 			total *= a
 		return total
 ```
-It is pretty obvious how poorly this class is written. There is no spacing between functions or comments. Also, the code inside each function has no spacing between code segments, making reading the algorithms very difficult. When considering spacing it is important to put a blank line between consecutive functions and classes. It is also important to leave blank lines in-between different sections of an algorithm.
+There is no spacing between functions or comments. Also, the code inside each function has no spacing between code segments, making distinguishing between them difficult. To facilitate readability, it is important to put a blank line between consecutive functions and classes. It is also important to leave blank lines between different sections of an algorithm.
 
 Lets fix the class above to follow these rules:
 ```
@@ -165,11 +165,11 @@ class Foo():
 
 		return total
 ``` 
-This class is much easier to understand for developers to read. For example, the spacing between functions clearly seperates their functionality. While blank lines should always be used, they should be used sparingly. For example, a developer may think it is acceptable to put multiple blank lines between statements to improve readability. However, this can actually make the code more illegible as a developer reading may think that the large seperation between code segments means that they do functionally different things. Thus, it is recommended to only use one blank line between code segments.
+This class is much easier for developers to read. The spacing between functions clearly separates their functionality. While blank lines should be used, multiple blank lines should be used sparingly. For example, a developer may think putting multiple blank lines between statements improves readability. However, it actually makes the code more illegible. The reader may assume that the large separation between code segments means that the segments do functionally different things. Thus, it is recommended to only use one blank line between code segments. Save multiple blank lines for delineating truly separate function entities.
 
 <a id="Line Length"></a>
 ## Line Length
-There are times when a single line of code can stretch far beyond the width of the screen. In these cases, it is important to break up the line into multiple structured lines. This will improve the readability of the code for other developers. It is recommended to limit lines to 79 characters which is the standard width of most IDE's. This will help when transferring code between machines a screens as a developer will always be able to read a full line of code on their screen.
+There are times when a single line of code can stretch beyond the width of the screen, which is inconvenient for the reader. In these cases, it is important to break up the line into multiple structured lines. It is recommended to limit lines to 79 characters, the standard width of most IDE's. This helps when code must be transferred between machines. It ensures that any developer will be able to view an entire line of code on any screen.
 
 
 ## Up Next
