@@ -3,7 +3,34 @@
 ## Introduction
 Naming conventions is another critical part of a development teams coding style. Naming conventions will help readers distinguish between different data structures and layers of code. For example, functions should have a different naming convention than variables so that a reader can clearly tell the difference when reading the code. There are two styles of naming conventions we will discuss here: Descriptive and Prescriptive.
 
-# Descriptive
+## Prescriptive
+Prescriptive naming conventions are ones that describe how a data structure should be named. You can think of prescriptive naming conventions as "names to avoid". For example, most style guides tend to steer developers away from using `I` (uppercase eye), `O` (uppercase oh), and `l` (lowercase el) as names to data structures as they look very similar to `0` (zero) and `1` (one). 
+
+Most prescriptive naming conventions are set by the development team. For example, a team may decide to include a leading term to every method in a module. This will allow users to easily determine the name of a method. 
+
+For example, lets say a team is writing a module to handle strings. The team may decide to add a leading `str_` to all method names in the module.
+
+This would look as so:
+```
+Class StringHandler():
+	def __init__(self):
+		return
+
+	def str_get(self):
+		return self.s
+
+	def str_update(self, s):
+		self.s = s
+
+	def str_format(self, s, type):
+		return format(s, type)
+```
+If a developer would like to use this module, he will soon find out that all methods that work with a string have the leading `str_`. Now the developer can basically guess the name of functions.
+
+While prescriptive naming conventions are usually left up to the team, it is essential to stick to the determined conventions. For example, the team may decide to stay away from all single letter names (`i`, `x`, `y`). While this may be difficult for developers used to using these names, it is important to stick to the teams convetions.
+
+
+## Descriptive
 Descriptive naming conventions are the way in which developers structure a name. This includes character case, name length, underscores, etc.
 
 Here are a few descriptive naming conventions and their typical use:
@@ -44,3 +71,5 @@ Here are a few descriptive naming conventions and their typical use:
 	- Used for:
 		- Longer variable names
 		- Longer function names
+
+
