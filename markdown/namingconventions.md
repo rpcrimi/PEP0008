@@ -72,4 +72,36 @@ Here are a few descriptive naming conventions and their typical use:
 		- Longer variable names
 		- Longer function names
 
+## Other Notes
+
+- Public attributes should never include a leading underscore as this is the convention for non-public attributes. If a public attribute interferes with a reserved word, use a trailing underscore. For example, `min_size` should be changed to `min_size_`.
+
+- Always use `self` as the first argument to an instance method.
+
+Bad: 
+```
+Class Cat(Pet):
+	def __init__(self):
+		return
+
+	def change_type(t, self):
+		self.type = t
+
+	def add_sizes(size1, size2, self):
+		self.size = size1 + size2
+```
+Good:
+```
+Class Cat(Pet):
+	def __init__(self):
+		return
+
+	def change_type(self, t):
+		self.type = t
+
+	def add_sizes(self, size1, size2):
+		self.size = size1 + size2
+```
+- It is best not to abbreviate words to make shorter names. This is usually done when a name conflicts with a reserved keyword. For example, 'pet_type' shortened to `pet_typ`. This will confuse readers as to which of the terms they are looking at. Instead, use a trailing underscore (`pet_type_`). This will let a reader know that they are looking at a local version of the name rather than the keyword.
+
 
