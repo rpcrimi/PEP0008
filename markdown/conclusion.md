@@ -1,1 +1,5 @@
 # Conclusion
+
+When using a style guide, the most important rule is to consistently adhere to it. Failing to do so will confuse readers more as they are expecting conventions to be standard. For example, if a development team decides to name variables in mixed case, then every variable should have this appearance. If a single variable is structured in another format, a reader will believe this variable is another data structure. 
+
+While the topics listed in this article are designed to be the standard for Python code, a development team is always free to use their own guide, as long as they always adhere to it. For teams working with legacy code, it could actually be detrimental to change their style in a new version. Outside developers working with legacy code will most likely see backward compatibility issues if there is a change in the coding style of the package.

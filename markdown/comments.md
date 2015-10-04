@@ -103,8 +103,3 @@ This is a quote every developer should live by. If comments are out of date or d
 
 ## Up Next
 [Naming Conventions] (https://github.com/rpcrimi/PEP0008/blob/master/markdown/namingconventions.md)
-
-
-
-
-
